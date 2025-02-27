@@ -5,7 +5,9 @@ import { ShopContext } from '../context/shopContext'
 const Product = () => {
   const {productId} = useParams()
   const {products} = useContext(ShopContext)
+
   const [productData, setProductData] = useState(false)
+  const [image, setImage] = useState('')
 
   const fetchProductData = async () => {
     products.map((item) => {
