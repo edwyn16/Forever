@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { ShopContext } from '../context/shopContext'
 
@@ -10,6 +10,10 @@ const Product = () => {
   const fetchProductData = async () => {
     
   }
+
+  useEffect(() => {
+    fetchProductData()
+  }, [productId, products])
 
   return (
     <div>
