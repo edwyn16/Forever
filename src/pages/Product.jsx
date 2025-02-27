@@ -24,11 +24,11 @@ const Product = () => {
     fetchProductData()
   }, [productId, products])
 
-  return (
+  return productData ? (
     <div>
         
     </div>
-  )
+  ) : <div className='opacity-0'></div>
 }
 
 export default Product
