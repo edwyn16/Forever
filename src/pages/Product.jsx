@@ -7,6 +7,10 @@ const Product = () => {
   const {products} = useContext(ShopContext)
   const [productData, setProductData] = useState(false)
 
+  const fetchProductData = async () => {
+    
+  }
+
   return (
     <div>
         
