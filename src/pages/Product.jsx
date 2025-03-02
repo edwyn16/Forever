@@ -9,6 +9,7 @@ const Product = () => {
 
   const [productData, setProductData] = useState(false)
   const [image, setImage] = useState('')
+  const [size, setSize] = useState('')
 
   const fetchProductData = async () => {
     products.map((item) => {
@@ -61,11 +62,13 @@ const Product = () => {
               <div className='flex gap-2'>
                 {
                   productData.sizes.map((item, index) => (
-                    <button className={`border py-2 px-4 bg-gray-100`} key={index}> {item} </button>
+                    <button onClick={() => setSize(item)} className={`border-2 py-2 px-4 bg-gray-100 ${item === size ? 'border-orange-400' : ''}`} key={index}> {item} </button>
                   ))
                 }
               </div>
             </div>
+            <button className='bg-black text-white px-8 py-3 active:bg-gray-700'> ADD TO CART </button>
+            <hr className='mt-8 sm:w-4/5' />
         </div>
       </div>
     </div>
