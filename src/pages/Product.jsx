@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { ShopContext } from '../context/shopContext'
 import { assets } from '../assets/frontend_assets/assets'
+import RelatedProducts from '../components/RelatedProducts'
 
 const Product = () => {
   const {productId} = useParams()
@@ -44,6 +45,7 @@ const Product = () => {
             <img className='w-full h-auto' src={image} alt="" />
           </div>
         </div>
+
         {/** ----- Product Info ----- */}
         <div className='flex-1'>
             <h1 className='font-medium text-2xl mt-2'> {productData.name} </h1>
@@ -76,6 +78,7 @@ const Product = () => {
             </div>
         </div>
       </div>
+
       { /** ----- Description & Review Section ----- */ }
       <div className='mt-20'>
         <div className='flex'>
@@ -87,6 +90,9 @@ const Product = () => {
           <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, doloremque placeat? Laboriosam cum, ab illum hic ad minus fuga eligendi tenetur alias dolores eaque enim quod deserunt, beatae porro? Iusto? </p>
         </div>
       </div>
+
+      { /** ----- Related Products Section ----- */ }
+      <RelatedProducts category={productData.category} subCategory={productData.subCategory} />
     </div>
   ) : <div className='opacity-0'></div>
 }
