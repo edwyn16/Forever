@@ -12,6 +12,7 @@ import Orders from './pages/Orders'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Searchbar from './components/Searchbar'
+import { ToastContainer, toast } from 'react-toastify';
 
 const App = () => {
   return (
