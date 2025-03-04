@@ -3,7 +3,7 @@ import { ShopContext } from '../context/shopContext'
 import Title from './Title'
 
 const CartTotal = () => {
-    const {currency, delivery_fee, getCarAmount} = useContext(ShopContext)
+    const {currency, delivery_fee, getCartAmount} = useContext(ShopContext)
 
   return (
     <div className='w-full'>
