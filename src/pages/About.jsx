@@ -1,6 +1,7 @@
 import React from 'react'
 import Title from '../components/Title'
 import { assets } from '../assets/frontend_assets/assets'
+import NewsletterBox from '../components/NewsletterBox'
 
 const About = () => {
   return (
@@ -17,6 +18,25 @@ const About = () => {
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos harum saepe adipisci doloribus consequuntur nulla aliquid asperiores explicabo maiores culpa autem dolores quod doloremque neque magni, quas rerum ullam amet? </p>
           </div>
         </div>
+        <div className='text-2xl py-4'>
+          <Title text1={'WHY'} text2={'CHOOSE US'} />
+        </div>
+        <div className='flex flex-col md:flex-row text-sm mb-20'>
+          <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
+            <b className='text-lg'> Quality Assurance: </b>
+            <p className='text-gray-600'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestiae, veniam possimus odit aliquam doloremque dicta iure quasi rerum eius quas ullam consectetur quis, reiciendis hic voluptas. Cum, incidunt accusamus.</p>
+          </div>
+          <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
+            <b className='text-lg'> Convenience: </b>
+            <p className='text-gray-600'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestiae, veniam possimus odit aliquam doloremque dicta iure quasi rerum eius quas ullam consectetur quis, reiciendis hic voluptas. Cum, incidunt accusamus.</p>
+          </div>
+          <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
+            <b className='text-lg'> Exceptional Customer Service: </b>
+            <p className='text-gray-600'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestiae, veniam possimus odit aliquam doloremque dicta iure quasi rerum eius quas ullam consectetur quis, reiciendis hic voluptas. Cum, incidunt accusamus.</p>
+          </div>
+        </div>
+
+        <NewsletterBox />
     </div>
   )
 }
