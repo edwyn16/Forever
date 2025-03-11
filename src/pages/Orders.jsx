@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { ShopContext } from '../context/shopContext'
 import Title from '../components/Title'
-import { assets } from '../assets/frontend_assets/assets'
 
 const Orders = () => {
   const { products, currency } = useContext(ShopContext)
